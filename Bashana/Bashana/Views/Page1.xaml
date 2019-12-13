@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Bashana.Views"
+             mc:Ignorable="d"
+             x:Class="Bashana.Views.Page1"
+             BackgroundImage="Table1.jpg">
+    
+    <ContentPage.Content>
+        
+        
+        <StackLayout>
+
+            <Label Text="Khetha inombolo esho IsiKhombisa"  FontSize="Large"  FontAttributes="Bold" TextColor="Purple" Margin="40" HorizontalOptions="CenterAndExpand" BackgroundColor="Orange"  ></Label>
+            
+            
+            <Grid Margin="90,40,40,200" VerticalOptions="CenterAndExpand" Padding="10">
+
+                
+                
+                <Grid.RowDefinitions>
+                    
+
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+
+
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+
+
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="5" FontSize="20" x:Name="NumberButton1" TextColor="Purple" FontAttributes="Bold" Clicked="NumberButton1_Clicked"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="8" FontSize="20" x:Name="NumberButton2" TextColor="Purple" FontAttributes="Bold" Clicked="NumberButton2_Clicked"/>
+                <Button Grid.Row="1" Grid.Column="0" Text="2" FontSize="20" x:Name="NumberButton3" TextColor="Purple" FontAttributes="Bold" Clicked="NumberButton3_Clicked"/>
+                <Button Grid.Row="1" Grid.Column="1" Text="7" FontSize="20" x:Name="NumberButton4" TextColor="Purple" FontAttributes="Bold" Clicked="NumberButton4_Clicked"/>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
